@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>KHYATI OVERSEAS - Products</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors:
+          {
+            brand: {
+              50: '#eef7ff',
+              100: '#d9edff',
+              200: '#bce0ff',
+              300: '#8ecaff',
+              400: '#59aaff',
+              500: '#2b6cee', // Primary brand color based on requested accent
+              600: '#1d58d8', // Darker shade for hover
+              700: '#1746c5',
+              800: '#193ba0',
+              900: '#19347d',
+              950: '#10204d',
+            },accent: {
+                            DEFAULT: '#2b6cee', // The requested accent color
+                            hover: '#1d58d8',   // Matching the brand hover logic
+                            light: '#59aaff'
+                        }
+          },
+          fontFamily: {
+            sans: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            md: "0.375rem",
+            lg: "0.75rem",
+            xl: "1rem",
+            "2xl": "1.5rem"
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            'glow': '0 0 15px rgba(59, 130, 246, 0.5)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
+
+  <div id="site-header"></div>
+    <main class="flex-grow flex flex-col items-center py-10 lg:py-16 px-4 md:px-10 lg:px-20">
+      <div class="flex flex-col max-w-[1200px] w-full gap-12 lg:gap-16">
+        <div class="flex flex-col gap-6 text-center md:text-left">
+          <div class="flex flex-col gap-3">
+            <span class="text-brand-600 font-bold tracking-wider uppercase text-xs md:text-sm">Global Export
+              Quality</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+              Our Products
+            </h1>
+            <p class="text-slate-500 dark:text-slate-500 text-lg font-normal leading-relaxed max-w-2xl">
+              Explore our premium selection of export-quality goods, sourced directly from manufacturers and delivered
+              worldwide with excellence.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Categories</h3>
+            <a class="text-sm font-semibold text-brand-600 hover:text-brand-600-dark hover:underline flex items-center gap-1"
+              href="#">
+              View All <span class="material-symbols-outlined text-base">arrow_right_alt</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+            <a href="product-category.html"
+              class="group cursor-pointer flex flex-col items-center gap-4 p-6 rounded-2xl bg-white dark:bg-surface-dark hover:shadow-soft dark:hover:bg-brand-700 border border-slate-100 dark:border-slate-700 hover:border-brand-400/30 transition-all duration-300">
+              <div
+                class="size-16 lg:size-20 rounded-xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-4xl">agriculture</span>
+              </div>
+              <span class="text-base font-semibold text-brand-900 dark:text-slate-200">Agricultural</span>
+            </a>
+            <div
+              class="group cursor-pointer flex flex-col items-center gap-4 p-6 rounded-2xl bg-white dark:bg-surface-dark hover:shadow-soft dark:hover:bg-brand-700 border border-slate-100 dark:border-slate-700 hover:border-brand-400/30 transition-all duration-300">
+              <div
+                class="size-16 lg:size-20 rounded-xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-4xl">potted_plant</span>
+              </div>
+              <span class="text-base font-semibold text-brand-900 dark:text-slate-200">Herbs</span>
+            </div>
+            <div
+              class="group cursor-pointer flex flex-col items-center gap-4 p-6 rounded-2xl bg-white dark:bg-surface-dark hover:shadow-soft dark:hover:bg-brand-700 border border-slate-100 dark:border-slate-700 hover:border-brand-400/30 transition-all duration-300">
+              <div
+                class="size-16 lg:size-20 rounded-xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-4xl">local_florist</span>
+              </div>
+              <span class="text-base font-semibold text-brand-900 dark:text-slate-200">Floral Herbs</span>
+            </div>
+            <div
+              class="group cursor-pointer flex flex-col items-center gap-4 p-6 rounded-2xl bg-white dark:bg-surface-dark hover:shadow-soft dark:hover:bg-brand-700 border border-slate-100 dark:border-slate-700 hover:border-brand-400/30 transition-all duration-300">
+              <div
+                class="size-16 lg:size-20 rounded-xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-4xl">self_improvement</span>
+              </div>
+              <span class="text-base font-semibold text-brand-900 dark:text-slate-200">Religious</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-4">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Featured Products</h3>
+            <div
+              class="flex gap-2 bg-white dark:bg-surface-dark p-1 rounded-lg border border-slate-200 dark:border-slate-700">
+              <button
+                class="size-8 flex items-center justify-center rounded-md bg-brand-50dark:bg-slate-700 text-brand-900 dark:text-white">
+                <span class="material-symbols-outlined text-xl">grid_view</span>
+              </button>
+              <button
+                class="size-8 flex items-center justify-center rounded-md text-slate-500 hover:bg-slate-50 dark:hover:bg-brand-700 hover:text-brand-900 dark:hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-xl">list</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Premium long grain basmati rice in a wooden bowl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbB5aPMtrdwjfkzki_eZf1jMrKDNkNahc0tO0yzMLexNAyaZ7MGLi7oznUiVpTzSYxX9sVBQ-CfRKslFaYfrv460IETdz_uJHYmqV-F-Odp3TW0PRHVdbh3fKoqkJHr9txj-h_DktfalSjROsWCxwB9S1ZoqaMqNOXb8Dnz1i5U-ilTx9AJbdOdwbh9WG8VSHXT7VqH8YJUK1MtsfEZJI5WuQpmBdWvrvISZdv9outoHdyxOSD_w55O3-OQt37kAVd3v8LfGuA1WTA");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">Agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Basmati Rice Premium</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                    Long grain aromatic rice suitable for international markets. Perfectly aged for the best aroma.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">500kg</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Spools of organic white cotton yarn"
+                  style='background-image: url("assets/images/Photo/Dry Chilies/dried-red-chilli-background.jpg");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Red Chilies</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                    Premium sun-dried red chilies known for vibrant color, strong pungency, and rich flavor.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">100kg</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50 dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Industrial steel valves on a factory floor"
+                  style='background-image: url("assets/images/Photo/Millets/millets.jpg");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Millets</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                    Naturally grown nutrient-rich millets including finger millet, pearl millet, and foxtail millet.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">100kg</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Various colored chemical beakers in a lab"
+                  style='background-image: url("assets/images/Photo/Onions/vecteezy_aromatic-ripe-red-onions-heap_50496051.jpeg");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Onions</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                   Fresh, firm onions with uniform size and strong shelf life. Widely used for cooking, 
+                   processing, and dehydration. Available in red and white varieties for domestic and export supply.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">100kg</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Large bags of coffee beans ready for export"
+                  style='background-image: url("assets/images/Photo/Dal/chickpea.jpg");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">Agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Split Chickpeas (Chana Dal)</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                    High-quality split chickpeas processed from premium-grade pulses. Known for consistent size, natural taste,
+                     and high protein content. Suitable for food processing, retail, and bulk supply.
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">1 Ton</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div class="relative w-full aspect-[4/3] bg-brand-50dark:bg-slate-800 overflow-hidden">
+                <div class="absolute inset-0 bg-center bg-cover transition-transform group-hover:scale-110 duration-700"
+                  data-alt="Polyester fabric rolls in a warehouse"
+                  style='background-image: url("assets/images/Photo/jaggery/Jaggery.JPG");'>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                  class="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                  <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">agri</span>
+                </div>
+              </div>
+              <div class="flex flex-col p-6 gap-4 flex-1">
+                <div class="flex flex-col gap-2 flex-1">
+                  <h4
+                    class="text-xl font-bold text-brand-900 dark:text-white group-hover:text-brand-600 transition-colors">
+                    Jaggery</h4>
+                  <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed line-clamp-2">
+                   Traditional unrefined jaggery made from natural sugarcane juice. Free from chemicals, 
+                   rich in minerals, and widely used in food, sweets, and beverages. Available in solid blocks and powder form.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                  <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-500 tracking-wider">Min
+                      Order</span>
+                    <span class="text-sm font-semibold text-brand-900 dark:text-slate-300">500kg</span>
+                  </div>
+                  <button
+                    class="rounded-lg h-9 px-4 border border-slate-200 dark:border-slate-600 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-brand-900 dark:text-slate-200 text-sm font-semibold flex items-center gap-2 transition-all">
+                    <span>Enquire</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8">
+          <div
+            class="flex items-center gap-2 bg-white dark:bg-surface-dark p-1 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm">
+            <button
+              class="size-9 flex items-center justify-center rounded-full hover:bg-brand-50dark:hover:bg-brand-700 text-slate-500 dark:text-slate-500 transition-colors">
+              <span class="material-symbols-outlined text-xl">chevron_left</span>
+            </button>
+            <button
+              class="size-9 flex items-center justify-center rounded-full bg-brand-600 text-white font-bold shadow-md shadow-brand-500/30">1</button>
+            <button
+              class="size-9 flex items-center justify-center rounded-full hover:bg-brand-50dark:hover:bg-brand-700 text-slate-500 dark:text-slate-500 font-medium transition-colors">2</button>
+            <button
+              class="size-9 flex items-center justify-center rounded-full hover:bg-brand-50dark:hover:bg-brand-700 text-slate-500 dark:text-slate-500 font-medium transition-colors">3</button>
+            <button
+              class="size-9 flex items-center justify-center rounded-full hover:bg-brand-50dark:hover:bg-brand-700 text-slate-500 dark:text-slate-500 transition-colors">
+              <span class="material-symbols-outlined text-xl">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-slate-950 dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+      <div class="flex flex-col gap-12 max-w-[1200px] mx-auto px-6 lg:px-10 py-16">
+        <div class="flex flex-wrap justify-between gap-12">
+          <div class="flex flex-col gap-6 max-w-sm">
+            <div class="flex items-center gap-3 text-brand-900 dark:text-white">
+              <div class="flex size-9 items-center justify-center rounded-full bg-white text-white">
+                            <img src="assets/images/logo.png"
+                                alt="logo"
+                                class="w-30 h-30">
+                        </div>
+              <h2 class="text-xl text-white font-bold tracking-tight">KHYATI OVERSEAS</h2>
+            </div>
+            <p class="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
+              Connecting global markets with premium quality products. Your trusted partner in international trade since
+              1995.
+            </p>
+            <div class="flex gap-4">
+              <a class="size-10 rounded-full flex items-center justify-center bg-brand-50dark:bg-slate-800 text-slate-500 dark:text-slate-500 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 dark:hover:text-white transition-all"
+                href="#">
+                <span class="material-symbols-outlined text-xl">alternate_email</span>
+              </a>
+              <a class="size-10 rounded-full flex items-center justify-center bg-brand-50dark:bg-slate-800 text-slate-500 dark:text-slate-500 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 dark:hover:text-white transition-all"
+                href="#">
+                <span class="material-symbols-outlined text-xl">call</span>
+              </a>
+              <a class="size-10 rounded-full flex items-center justify-center bg-brand-50dark:bg-slate-800 text-slate-500 dark:text-slate-500 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 dark:hover:text-white transition-all"
+                href="#">
+                <span class="material-symbols-outlined text-xl">public</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-16">
+            <div class="flex flex-col gap-6">
+              <h5 class="text-white dark:text-white text-base font-bold tracking-wide">Company</h5>
+              <div class="flex flex-col gap-3">
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">About Us</a>
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">Careers</a>
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">Blog</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h5 class="text-white dark:text-white text-base font-bold tracking-wide">Support</h5>
+              <div class="flex flex-col gap-3">
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">Help Center</a>
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">Terms of Service</a>
+                <a class="text-slate-500 dark:text-slate-500 text-sm hover:text-brand-600 dark:hover:text-brand-600 transition-colors"
+                  href="#">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-slate-500 dark:text-slate-500 text-xs md:text-sm text-center md:text-left">
+            © 2024 Khyati Overseas. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+<link rel="stylesheet" href="assets/css/global.css">
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

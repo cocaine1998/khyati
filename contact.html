@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KHYATI OVERSEAS - Contact Us</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef7ff',
+                            100: '#d9edff',
+                            200: '#bce0ff',
+                            300: '#8ecaff',
+                            400: '#59aaff',
+                            500: '#2b6cee', // brandbrand color based on requested accent
+                            600: '#1d58d8', // Darker shade for hover
+                            700: '#1746c5',
+                            800: '#193ba0',
+                            900: '#19347d',
+                            950: '#10204d',
+                        },
+                        accent: {
+                            DEFAULT: '#2b6cee', // The requested accent color
+                            hover: '#1d58d8',   // Matching the brand hover logic
+                            light: '#59aaff'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        display: ['DM Sans', 'sans-serif']
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        '2xl': "1.5rem",
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
+
+    <div id="site-header"></div>
+    <main class="flex-grow flex flex-col items-center">
+        <div class="w-full bg-white border-b border-slate-200">
+            <div class="max-w-[1280px] mx-auto px-6 py-12 md:py-16">
+                <div class="flex flex-col gap-4 max-w-3xl">
+                    <nav class="flex items-center gap-2 text-sm text-slate-500 mb-2">
+                        <a class="hover:text-brand-700 transition-colors" href="index.html">Home</a>
+                        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                        <span class="text-slate-600 font-medium">Contact Us</span>
+                    </nav>
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                        Get in Touch with <br /><span class="text-brand-600">Khyati Overseas</span>
+                    </h1>
+                    <p class="text-slate-500 text-lg leading-relaxed max-w-2xl mt-2">
+                        We are here to help you with your import-export needs. Whether you have a question about our
+                        products, pricing, or need a partnership proposal, our team is ready to answer all your
+                        questions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full max-w-[1280px] px-6 py-12 md:py-20 flex flex-col gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                <div
+                    class="lg:col-span-7 bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none">
+                    </div>
+                    <div class="relative z-10">
+                        <h2 class="text-slate-900 text-2xl font-bold mb-8 flex items-center gap-3">
+                            <span
+                                class="flex items-center justify-center size-10 rounded-full bg-brand-100 text-brand-700">
+                                <span class="material-symbols-outlined text-sm">edit</span>
+                            </span>
+                            Send us a message
+                        </h2>
+                        <form class="flex flex-col gap-6" onsubmit="event.preventDefault();">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-slate-700 text-sm font-semibold" for="fullname">Full Name</label>
+                                    <input
+                                        class="w-full h-11 px-4 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 placeholder-slate-400/70 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all"
+                                        id="fullname" placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-slate-700 text-sm font-semibold" for="email">Email
+                                        Address</label>
+                                    <input
+                                        class="w-full h-11 px-4 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 placeholder-slate-400/70 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all"
+                                        id="email" placeholder="john@example.com" type="email" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-slate-700 text-sm font-semibold" for="phone">Phone Number</label>
+                                    <input
+                                        class="w-full h-11 px-4 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 placeholder-slate-400/70 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all"
+                                        id="phone" placeholder="+91 98765 43210" type="tel" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label class="text-slate-700 text-sm font-semibold" for="country">Country</label>
+                                    <div class="relative">
+                                        <select
+                                            class="w-full h-11 px-4 pr-10 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 appearance-none focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all cursor-pointer"
+                                            id="country">
+                                            <option disabled="" selected="" value="">Select your country</option>
+                                            <option value="IN">India</option>
+                                            <option value="US">United States</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="AE">UAE</option>
+                                        </select>
+                                        <div
+                                            class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
+                                            <span class="material-symbols-outlined text-lg">expand_more</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-slate-700 text-sm font-semibold" for="message">Your Message</label>
+                                <textarea
+                                    class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 placeholder-slate-400/70 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-none"
+                                    id="message" placeholder="Tell us about your requirements..." rows="5"></textarea>
+                            </div>
+                            <div class="pt-2">
+                                <button
+                                    class="w-full md:w-auto inline-flex items-center justify-center h-12 px-8 rounded-lg bg-brand-500 hover:bg-brand-700 text-white font-bold text-base transition-all shadow-lg shadow-brand-500/30 active:scale-[0.98]"
+                                    type="submit">
+                                    Send Message
+                                    <span class="material-symbols-outlined ml-2 text-lg">send</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex flex-col gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Contact Information</h3>
+                        <p class="text-slate-500 text-sm">Reach out to us directly through any of these channels.</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div
+                            class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 group hover:border-brand-200 transition-colors">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="size-12 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Head
+                                        Office</h3>
+                                    <p class="text-slate-900 font-semibold leading-relaxed">Collectorate Main Rd,
+                                        Kothi Bazar Colony,<br /> Narmadapuram, Madhya Pradesh, India - 461001</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 group hover:border-brand-200 transition-colors">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="size-12 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Email
+                                    </h3>
+                                    <a class="text-slate-900 font-semibold hover:text-brand-600 transition-colors block text-lg"
+                                        href="mailto:info@khyatioverseas.com">info@khyatioverseas.com</a>
+                                    <p class="text-xs text-green-600 mt-1 flex items-center gap-1 font-medium">
+                                        <span class="size-1.5 rounded-full bg-green-500"></span>
+                                        We typically reply within 24 hours
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 group hover:border-brand-200 transition-colors">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="size-12 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Phone
+                                    </h3>
+                                    <a class="text-slate-900 font-semibold hover:text-brand-600 transition-colors block text-lg"
+                                        href="tel:+919876543210">+91 9201767546</a>
+                                    <!--<a class="text-slate-500 text-sm hover:text-brand-600 transition-colors block mt-1 font-medium" href="tel:+919876543211">+91 98765 43211</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-brand-800 rounded-xl p-5 text-white shadow-lg relative overflow-hidden">
+                            <div class="absolute right-0 top-0 p-4 opacity-10">
+                                <span class="material-symbols-outlined text-6xl">schedule</span>
+                            </div>
+                            <h3 class="text-brand-200 text-xs font-bold uppercase tracking-wider mb-2">Hours</h3>
+                            <p class="text-white text-sm font-semibold">Mon - Fri<br />9am - 6pm IST</p>
+                        </div>
+                        <div class="bg-brand-50 rounded-xl p-5 border border-brand-100">
+                            <span class="material-symbols-outlined text-brand-600 mb-2">support_agent</span>
+                            <h3 class="text-slate-800 text-xs font-bold uppercase tracking-wider mb-1">Support</h3>
+                            <p class="text-slate-900 text-sm font-bold">24/7 Online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full relative group">
+            <div class="w-full h-[450px] bg-slate-50 overflow-hidden relative">
+                <img alt="Map background showing global connections"
+                    class="w-full h-full object-cover opacity-80 mix-blend-multiply filter contrast-125"
+                    data-alt="Map background showing global connections" data-location="Mumbai, India"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-frJzkhaouVlP8poX2B_HTtPwEEhtbFWjxKg8pq-RVIIIgDBwF6IbBI1qVjNu2SF93qqzTkqRm_O-fqkGql8Uqvz4uNXgxke4Tf1_wX1nK11nY_vBRR9_QfGFyofLgbAYYpXaXKQxHm9CG922yjBbfxZdzzXwTpbJtdBQ9XSXWr6HrKuljG5e0DhEFOcgwnDMncaGhYSggj-WvprO6CNfG4_IW3LORzHwcFrUpPpmVOl9ySVeXNkS-FIwsQl7yDaWZmjNmzH29mfX" />
+                <div class="absolute inset-0 bg-slate-900/10 mix-blend-overlay"></div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group-hover:-translate-y-[calc(50%+10px)] transition-transform duration-500">
+                    <div class="relative">
+                        <div class="size-6 bg-brand-500 rounded-full animate-ping absolute top-0 left-0 opacity-75">
+                        </div>
+                        <div class="size-6 bg-slate-600 rounded-full relative z-10 border-4 border-white shadow-xl">
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white text-slate-900 text-xs font-bold px-4 py-2 rounded-lg mt-3 shadow-lg border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        Mumbai HQ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-full bg-slate-900 pt-20 pb-10 text-slate-300">
+        <div class="max-w-[1280px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-slate-800 pb-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3 text-white">
+                        <div class="size- text-brand-500">
+                            <div class="flex size-9 items-center justify-center rounded-full bg-white text-white">
+                            <img src="assets/images/logo.png"
+                                alt="logo"
+                                class="w-30 h-30">
+                        </div>
+                        </div>
+                        <h2 class="text-white text-lg font-bold tracking-wide">KHYATI OVERSEAS</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed pr-4">
+                        Leading the way in global trade solutions. We connect markets with quality products and reliable
+                        services worldwide.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-600 hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-600 hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">work</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-600 hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">flutter_dash</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Quick Links</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="index.html"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Home</a></li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="about.html"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>About Us</a></li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="products.html"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Our Products</a>
+                        </li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="global-presence.html"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Sustainability</a>
+                        </li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="contact.html"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Our Products</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="#"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Agricultural</a>
+                        </li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="#"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Textiles</a></li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="#"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Machinery</a></li>
+                        <li><a class="text-slate-400 text-sm hover:text-brand-400 transition-colors flex items-center gap-2"
+                                href="#"><span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>Chemicals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Stay Updated</h3>
+                    <p class="text-slate-400 text-sm mb-4">Subscribe to our newsletter for the latest market insights.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        <input
+                            class="w-full h-11 px-4 rounded-lg bg-slate-800 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-500"
+                            placeholder="Email Address" type="email" />
+                        <button
+                            class="w-full h-11 rounded-lg bg-brand-500 hover:bg-brand-600 text-white text-sm font-bold transition-colors shadow-lg shadow-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">© 2024 KHYATI OVERSEAS. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-500 text-sm hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-slate-500 text-sm hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<link rel="stylesheet" href="assets/css/global.css">
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

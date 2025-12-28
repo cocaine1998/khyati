@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Khyati Overseas - Services</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef7ff',
+                            100: '#d9edff',
+                            200: '#bce0ff',
+                            300: '#8ecaff',
+                            400: '#59aaff',
+                            500: '#2b6cee', // Primary brand color based on requested accent
+                            600: '#1d58d8', // Darker shade for hover
+                            700: '#1746c5',
+                            800: '#193ba0',
+                            900: '#19347d',
+                            950: '#10204d',
+                        },
+                        accent: {
+                            DEFAULT: '#2b6cee', // The requested accent color
+                            hover: '#1d58d8',   // Matching the brand hover logic
+                            light: '#59aaff'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        display: ['DM Sans', 'sans-serif']
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        '2xl': "1.5rem",
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
+
+  <!-- HEADER -->
+  <div id="site-header"></div>
+        <main class="flex-1 flex flex-col items-center">
+            <div class="w-full max-w-[1280px] px-6 lg:px-20 py-12 flex flex-col gap-20">
+                <div
+                    class="flex flex-col gap-6 text-center items-center lg:items-start lg:text-left pt-6 pb-10 border-b border-slate-200/60">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-bold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+                        Global Logistics Partner
+                    </div>
+                    <h1 class="text-slate-900 text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        Our <span class="text-brand-600">Services</span>
+                    </h1>
+                    <p class="text-slate-500 text-xl font-medium leading-relaxed max-w-2xl">
+                        Tailored global trade solutions designed for efficiency. We simplify international logistics so
+                        you can focus on scaling your business boundaries.
+                    </p>
+                </div>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center group">
+                    <div class="flex flex-col gap-8 order-2 lg:order-1">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-3 text-brand-600">
+                                <span class="p-2 bg-brand-50 rounded-lg material-symbols-outlined">input</span>
+                                <span class="text-sm font-bold tracking-widest uppercase">Inbound Logistics</span>
+                            </div>
+                            <h2 class="text-slate-900 text-3xl md:text-4xl font-bold leading-tight">
+                                Import Services
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                Comprehensive customs clearance, duty management, and inbound logistics solutions to
+                                ensure your goods arrive safely. We handle the paperwork and compliance checks,
+                                minimizing delays at the port.
+                            </p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Customs Clearance &amp; Duties</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Warehousing &amp; Distribution</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Regulatory Compliance</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="mt-2 flex w-fit cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white border-2 border-slate-200 hover:border-brand-600 hover:text-brand-600 text-slate-800 transition-all text-base font-bold group-hover:shadow-lg">
+                            <span>Learn more about Imports</span>
+                        </button>
+                    </div>
+                    <div
+                        class="relative order-1 lg:order-2 h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img alt="Large cargo ship containers at a port"
+                            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                            data-alt="Large cargo ship containers at a port"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsYhJkSLvKNMPBlTxeLdRM9T4mCZUeMVz-fLSnY343y1418dWIoZ2hgUOfEMIYNwmHoga3KighuIzcBtlg3vlTArBKhv_J9OApjBWia2sNJymuUx2Tmt9hGyrh_TKiuMoOBTnV1aKU2JrQJnrWNevaROcWQfTAtHbeGPEJ-Z4SgIYtfeZkVoAK7JE8wcYRX3aw662rIHDfkiYmvdkXDz3KR2Mi-p9ZIM70mzWtaGdRPwcxc9cFIlwe6s0Rb6lCcjAJ4AxPCCdaFOmQ" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                        </div>
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center group">
+                    <div
+                        class="relative order-1 h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img alt="Cargo airplane being loaded at sunset"
+                            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                            data-alt="Cargo airplane being loaded at sunset"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHEIc9O7zBA3eIwlD36r_tgtNCZguQIzkUVGU1rp-HeFhOKBp-YlYYhjwyIrCNRfJJP5E_Yh_oPlZ_VVhdinx6lwhJkWvXNPBHERZgF30r2yY2HJefjbQ2QHE5ZULLl0uH722ZD0idikx0tWdz31JWBv099aAMXn0vsQzQiv1_Vs8p3djnM-VddKGB6rRZlWQ1wHR5XaeVZxFqZ3eotnt0VApfw0P6L8a5kicHY_wQFgDPxVGowFDtAu8jMcgaSQNNvDRhqH-BM0ZY" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-8 order-2">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-3 text-brand-600">
+                                <span class="p-2 bg-brand-50 rounded-lg material-symbols-outlined">flight_takeoff</span>
+                                <span class="text-sm font-bold tracking-widest uppercase">Outbound Solutions</span>
+                            </div>
+                            <h2 class="text-slate-900 text-3xl md:text-4xl font-bold leading-tight">
+                                Export Services
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                Strategic market entry support and reliable outbound shipping networks. We help you
+                                navigate foreign trade policies, secure the best freight rates, and ensure your products
+                                meet international standards.
+                            </p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Global Market Entry Strategy</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Freight Forwarding (Air &amp; Sea)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Export Documentation</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="mt-2 flex w-fit cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white border-2 border-slate-200 hover:border-brand-600 hover:text-brand-600 text-slate-800 transition-all text-base font-bold group-hover:shadow-lg">
+                            <span>Learn more about Exports</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center group">
+                    <div class="flex flex-col gap-8 order-2 lg:order-1">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-3 text-brand-600">
+                                <span class="p-2 bg-brand-50 rounded-lg material-symbols-outlined">inventory_2</span>
+                                <span class="text-sm font-bold tracking-widest uppercase">Procurement</span>
+                            </div>
+                            <h2 class="text-slate-900 text-3xl md:text-4xl font-bold leading-tight">
+                                Product Sourcing
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                We identify verified vendors, manage quality control inspections, and handle
+                                negotiations. Our team on the ground verifies supplier credentials and oversees
+                                production to ensure quality matches your specifications.
+                            </p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Vendor Verification</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Quality Control Inspections</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Price Negotiation</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="mt-2 flex w-fit cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white border-2 border-slate-200 hover:border-brand-600 hover:text-brand-600 text-slate-800 transition-all text-base font-bold group-hover:shadow-lg">
+                            <span>Sourcing Details</span>
+                        </button>
+                    </div>
+                    <div
+                        class="relative order-1 lg:order-2 h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img alt="Warehouse aisle with stacked boxes"
+                            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                            data-alt="Warehouse aisle with stacked boxes"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWdRyzmzUIJXT3ZrNLMSml7dHbRjp4eQNXvcibaKG0vySMZldUQ1zHaASIi8SBF2nwi7cWIuWoqH7oizan0Ma1QAjE0D5-RAYb41YJfTCJf5otlJlri2HrBDAsVKK5IAgbfJ2i6PIsh7HoqtRLtRRm6yzoX8ALhWOr1moLr6I7LUgxMCt0zB8DKco6zusBihLlTpoQTIRybyIwIUtpqrtC70o4rzYUHwrxjrj7cns5A58uDtHg_LRDbgm6QwWqEfSX3b5AvvUFMAnI" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                        </div>
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center group">
+                    <div
+                        class="relative order-1 h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img alt="Person reviewing logistics paperwork on clipboard"
+                            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                            data-alt="Person reviewing logistics paperwork on clipboard"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0qAqkLcChMd7htRi-iNb3c9aodcjaFM2LnHxS5sz7CUd80WINVyOGgyMp8rdnPtzte_zJDP08ExeyOioqHUdkwcWsZiFFON4Ah5QAQCoOPaIlAZnI7eyXMk-RrwIoQtXuDSJQ9ICG3jNfDU7UVqsvH7t60LzGicLn6qZ8iki80CYOgUgnDTCBmdk2OpSmB7veaTnersjOstG8FYi67YzRSEGLYeUY5HZ2un6e_zW6nkC7zdlcPgsfpkge3BjzdRTAFmAT-IOaS30Y" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-8 order-2">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-3 text-brand-600">
+                                <span class="p-2 bg-brand-50 rounded-lg material-symbols-outlined">description</span>
+                                <span class="text-sm font-bold tracking-widest uppercase">Compliance</span>
+                            </div>
+                            <h2 class="text-slate-900 text-3xl md:text-4xl font-bold leading-tight">
+                                Logistics &amp; Documentation
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                Navigating the bureaucratic maze of international trade is our specialty. We provide
+                                comprehensive documentation services including Letters of Credit and insurance coverage
+                                to mitigate risks during transit.
+                            </p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Letter of Credit Processing</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Marine Cargo Insurance</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <span class="material-symbols-outlined text-brand-600 mt-0.5">check_circle</span>
+                                <span class="font-medium">Certificate of Origin</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="mt-2 flex w-fit cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white border-2 border-slate-200 hover:border-brand-600 hover:text-brand-600 text-slate-800 transition-all text-base font-bold group-hover:shadow-lg">
+                            <span>Compliance Services</span>
+                        </button>
+                    </div>
+                </section>
+                <div
+                    class="w-full mt-12 p-12 rounded-3xl bg-brand-900 relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                    <div
+                        class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-brand-700/30 blur-3xl pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-brand-600/20 blur-3xl pointer-events-none">
+                    </div>
+                    <div class="flex flex-col gap-3 relative z-10">
+                        <h3 class="text-white text-3xl font-bold tracking-tight">Ready to move your goods?</h3>
+                        <p class="text-brand-100 text-lg">Get a custom quote tailored to your shipping needs today.</p>
+                    </div>
+                    <button
+                        class="relative z-10 flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white text-brand-900 text-base font-bold shadow-lg hover:bg-brand-50 transition-all hover:scale-105">
+                        <span class="truncate">Request Service Quote</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-slate-900 py-16 px-10 border-t border-slate-800">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3 text-white">
+                        <div class="flex size-9 items-center justify-center rounded-full bg-white text-white">
+                            <img src="assets/images/logo.png"
+                                alt="logo"
+                                class="w-30 h-30">
+                        </div>
+                        <span class="font-bold text-lg tracking-tight">KHYATI OVERSEAS</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">Your trusted partner in global trade and
+                        logistics solutions. Connecting businesses across borders with efficiency and care.</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h4 class="text-white font-bold tracking-wide">Quick Links</h4>
+                    <div class="flex flex-col gap-3 text-slate-400 text-sm font-medium">
+                        <a class="hover:text-brand-500 transition-colors" href="#">Home</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">Services</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">About Us</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h4 class="text-white font-bold tracking-wide">Services</h4>
+                    <div class="flex flex-col gap-3 text-slate-400 text-sm font-medium">
+                        <a class="hover:text-brand-500 transition-colors" href="#">Import Solutions</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">Export Management</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">Product Sourcing</a>
+                        <a class="hover:text-brand-500 transition-colors" href="#">Logistics</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h4 class="text-white font-bold tracking-wide">Contact</h4>
+                    <div class="flex flex-col gap-4 text-slate-400 text-sm font-medium">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-brand-500 text-lg">mail</span>
+                            <span>info@khyatioverseas.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-brand-500 text-lg">call</span>
+                            <span>+91 9201767546</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-brand-500 text-lg mt-0.5">location_on</span>
+                            <span>Collectorate Main Rd, Kothi Bazar Colony,461001<br /> Narmadapuram, Madhya Pradesh,
+                                India - 461001</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 text-sm">© 2024 KHYATI OVERSEAS. All rights reserved.</p>
+                <div class="flex gap-6 text-slate-500 text-sm font-medium">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+<link rel="stylesheet" href="assets/css/global.css">
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
