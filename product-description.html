@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details | Khyati Overseas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= TAILWIND ================= -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              200: '#bfdbfe',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#0f172a'
+            },
+            accent: '#2563eb',
+            'accent-hover': '#1d4ed8'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Your existing CSS -->
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body class="bg-slate-50 text-slate-600 font-sans antialiased">
+
+  <!-- ================= HEADER ================= -->
+  <div id="site-header"></div>
+
+  <main class="pt-20">
+
+ <!-- ================= BREADCRUMB ================= -->
+    <div class="bg-white border-b">
+      <div class="max-w-7xl mx-auto px-4 py-4 text-sm">
+        <a href="products.html" class="text-brand-600 font-semibold hover:underline">
+          Products
+        </a>
+
+        <span class="mx-2">/</span>
+
+        <a id="breadcrumb-category" href="#" class="text-brand-600 font-semibold hover:underline">
+          Category
+        </a>
+
+        <span class="mx-2">/</span>
+
+        <span id="breadcrumb-product">
+        </span>
+      </div>
+    </div>
+
+<!-- ================= PRODUCT DETAILS ================= -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+        <!-- Product Image -->
+        <div class="size-[500px] aspect-square rounded-2xl overflow-hidden bg-white shadow-sm border border-slate-100">
+          <img id="product-image" alt="" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+        </div>
+
+        <!-- Product Info -->
+        <div class="flex flex-col gap-6">
+          <h1 id="product-name" class="text-3xl font-bold text-slate-900"></h1>
+
+          <p id="product-description" class="text-lg text-slate-600"></p>
+
+          <!-- Key Info -->
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <span id="product-origin"></span>
+            </div>
+            <div>
+              <span id="product-moq"></span>
+            </div>
+            <div>
+              <span id="product-packaging"></span>
+            </div>
+            <ul id="product-specs" class="space-y-2"></ul>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex flex-col sm:flex-row gap-4 mt-4">
+            <a href="contact.html" class="inline-flex h-14 items-center justify-center rounded-full
+                    bg-accent px-10 text-white font-bold
+                    transition hover:bg-accent-hover hover:scale-105">
+              Enquire Now
+            </a>
+
+           <!-- <a href="products.html" class="inline-flex h-14 items-center justify-center rounded-full
+                    border border-slate-300 px-10 font-bold text-slate-700
+                    transition hover:bg-slate-100">
+              Back to Products
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ================= PRODUCT DETAILS TABS ================= -->
+    <section class="bg-white py-16 border-t">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+          <!-- Description -->
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">Description</h3>
+            <p id="product-description-tab"></p>
+          </div>
+
+          <!-- Specifications -->
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">Specifications</h3>
+            <ul class="space-y-2 text-sm">
+              <li>✔ Moisture: ≤ 12%</li>
+              <li>✔ Curcumin Content: 2–5%</li>
+              <li>✔ Purity: 99% Clean</li>
+              <li>✔ Shelf Life: 24 Months</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- ================= RELATED PRODUCTS ================= -->
+    <section class="bg-slate-50 py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-10">
+          <h2 class="text-3xl font-bold text-slate-900">
+            Related Products
+          </h2>
+        </div>
+
+
+
+        <!-- Card -->
+        <div id="related-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 pt-20 pb-10 border-t border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-3 text-white">
+            <div class="flex size-9 items-center justify-center rounded-full bg-white text-white">
+              <img src="assets/images/logo.png" alt="logo" class="w-30 h-30">
+            </div>
+            <h2 class="text-white text-xl font-bold">KHYATI OVERSEAS</h2>
+          </div>
+          <p class="text-sm text-slate-500 leading-relaxed max-w-sm">
+            Premier import-export firm bridging global markets with reliability, speed, and excellence. Your
+            trusted partner in international trade.
+          </p>
+          <div class="flex gap-4">
+            <a class="flex size-10 items-center justify-center rounded-full bg-slate-800 text-white transition hover:bg-brand-600 hover:text-white border border-slate-700 hover:border-brand-600"
+              href="#">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-full bg-slate-800 text-white transition hover:bg-brand-600 hover:text-white border border-slate-700 hover:border-brand-600"
+              href="#">
+              <span class="material-symbols-outlined text-[20px]">call</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <h3 class="text-lg font-bold text-white">Quick Links</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a class="text-sm text-slate-500 hover:text-brand-500 transition-colors" href="index.html">Home</a>
+            </li>
+            <li><a class="text-sm text-slate-500 hover:text-brand-500 transition-colors" href="about.html">About
+                Us</a></li>
+            <li><a class="text-sm text-slate-500 hover:text-brand-500 transition-colors"
+                href="services.html">Services</a></li>
+            <li><a class="text-sm text-slate-500 hover:text-brand-500 transition-colors"
+                href="products.html">Products</a></li>
+            <li><a class="text-sm text-slate-500 hover:text-brand-500 transition-colors" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-5">
+          <h3 class="text-lg font-bold text-white">Contact Us</h3>
+          <ul class="flex flex-col gap-4">
+            <li class="flex items-start gap-4 text-sm text-slate-500 group">
+              <span
+                class="material-symbols-outlined text-brand-500 shrink-0 group-hover:text-white transition-colors">location_on</span>
+              <span>Collectorate Main Rd, Kothi Bazar Colony,461001<br /> Narmadapuram, Madhya Pradesh,
+                India - 461001</span>
+            </li>
+            <li class="flex items-center gap-4 text-sm text-slate-500 group">
+              <span
+                class="material-symbols-outlined text-brand-500 shrink-0 group-hover:text-white transition-colors">call</span>
+              <span>+91 9201767546</span>
+            </li>
+            <li class="flex items-center gap-4 text-sm text-slate-500 group">
+              <span
+                class="material-symbols-outlined text-brand-500 shrink-0 group-hover:text-white transition-colors">mail</span>
+              <span>info@khyatioverseas.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mt-16 border-t border-slate-800 pt-8 text-center flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-slate-500">
+          © 2026 KHYATI OVERSEAS. All rights reserved.
+        </p>
+        <div class="flex gap-6 text-sm text-slate-500">
+          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products-data.js"></script>
+
+<!-- ================= BREADCRUMB SCRIPTS ================= -->
+  <script>
+    // 1. Read product id
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get("id");
+
+    // 2. Find product
+    function findProductById(id) {
+      for (const categoryKey in PRODUCTS) {
+        const category = PRODUCTS[categoryKey];
+        for (const product of category.items) {
+          if (product.id === id) {
+            return { product, categoryKey };
+          }
+        }
+      }
+      return null;
+    }
+
+    const result = findProductById(productId);
+
+    if (!result) {
+      document.body.innerHTML =
+        "<h1 class='text-center mt-20'>Product not found</h1>";
+      throw new Error("Invalid product ID");
+    }
+
+    const { product, categoryKey } = result;
+
+    // ================= RELATED PRODUCTS =================
+    const relatedContainer = document.getElementById("related-products");
+
+    if (relatedContainer && PRODUCTS[categoryKey]) {
+      const relatedItems = PRODUCTS[categoryKey].items
+        .filter(p => p.id !== product.id)
+        .slice(0, 4);
+
+      relatedContainer.innerHTML = "";
+
+      relatedItems.forEach(p => {
+        const card = document.createElement("a");
+        card.href = `/product-description.html?id=${p.id}`;
+        card.className =
+          "group bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl transition overflow-hidden";
+
+        card.innerHTML = `
+      <div class="aspect-square overflow-hidden">
+        <img src="${p.image}"
+             alt="${p.name}"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+      </div>
+      <div class="p-4">
+        <h3 class="font-bold text-slate-900 group-hover:text-brand-600">
+          ${p.name}
+        </h3>
+      </div>
+    `;
+
+        relatedContainer.appendChild(card);
+      });
+
+      // Hide section if no related products
+      if (!relatedItems.length) {
+        relatedContainer.parentElement.classList.add("hidden");
+      }
+    }
+
+
+    // 3. Category labels
+    const CATEGORY_LABELS = {
+      pulses: { label: "Pulses", link: "products/agricultural/pulses.html" },
+      wheat: { label: "Wheat", link: "products/agricultural/wheat.html" },
+      rice: { label: "Rice", link: "products/agricultural/rice.html" },
+      maize: { label: "Maize", link: "products/agricultural/maize.html" },
+      barley: { label: "Barley", link: "products/agricultural/barley.html" },
+      millets: { label: "Millets", link: "products/agricultural/millets.html" },
+      beans: { label: "Beans", link: "products/agricultural/beans.html" },
+      others: { label: "Others", link: "products/agricultural/others.html" },
+      vegetables: { label: "Vegetables", link: "products/agricultural/vegetables.html" },
+      spices: { label: "Spices", link: "spices.html" },
+      agricultural: { label: "Agricultural Products", link: "product-agricultural.html" },
+      herbs_Leafs: { label: "Herbal Leafs", link: "product-Herbs.html" },
+      herbs_Floral: { label: "Floral Herbal", link: "product-Herbs.html" },
+      herbs_Sticks: { label: "Herbal Sticks", link: "product-Herbs.html" },
+      herbs_Others: { label: "Others", link: "product-Herbs.html" },
+      religious: { label: "Religious Products", link: "religious.html" }
+    };
+
+    // 4. Breadcrumb
+    const breadcrumbCategory = document.getElementById("breadcrumb-category");
+    const breadcrumbProduct = document.getElementById("breadcrumb-product");
+
+    if (breadcrumbCategory && breadcrumbProduct) {
+      breadcrumbProduct.textContent = product.name;
+
+      const categoryInfo = CATEGORY_LABELS[categoryKey];
+      if (categoryInfo) {
+        breadcrumbCategory.textContent = categoryInfo.label;
+        breadcrumbCategory.href = categoryInfo.link;
+      }
+    }
+
+    // 5. Inject product data
+    document.getElementById("product-name").textContent = product.name;
+    document.getElementById("product-image").src = product.image;
+    document.getElementById("product-image").alt = product.name;
+
+    document.getElementById("product-description").textContent = product.description;
+    document.getElementById("product-description-tab").textContent = product.para;
+
+    document.getElementById("product-origin").textContent = product.origin;
+    document.getElementById("product-moq").textContent = product.moq;
+    document.getElementById("product-packaging").textContent =
+      product.packaging || "-";
+
+    // 6. Specifications
+    const specsList = document.getElementById("product-specs");
+    specsList.innerHTML = "";
+
+    if (Array.isArray(product.specifications)) {
+      product.specifications.forEach(spec => {
+        const li = document.createElement("li");
+        li.textContent = "✔ " + spec;
+        specsList.appendChild(li);
+      });
+    }
+  </script>
+
+<!-- ================= HEADER LOADER ================= -->
+  <script>
+    fetch("/assets/partials/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("site-header").innerHTML = html;
+      })
+      .catch(err => console.error("Header load failed", err));
+  </script>
+
+
+
+
+
+</body>
+
+</html>

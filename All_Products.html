@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>All Products | Khyati Overseas</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+<!-- ================= tailwind ================= -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors:
+          {
+            brand: {
+              50: '#eef7ff',
+              100: '#d9edff',
+              200: '#bce0ff',
+              300: '#8ecaff',
+              400: '#59aaff',
+              500: '#2b6cee', // Primary brand color based on requested accent
+              600: '#1d58d8', // Darker shade for hover
+              700: '#1746c5',
+              800: '#193ba0',
+              900: '#19347d',
+              950: '#10204d',
+            },accent: {
+                            DEFAULT: '#2b6cee', // The requested accent color
+                            hover: '#1d58d8',   // Matching the brand hover logic
+                            light: '#59aaff'
+                        }
+          },
+          fontFamily: {
+            sans: ["Outfit", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            md: "0.375rem",
+            lg: "0.75rem",
+            xl: "1rem",
+            "2xl": "1.5rem"
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            'glow': '0 0 15px rgba(59, 130, 246, 0.5)'
+          }
+        }
+      }
+    };
+  </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F3F4F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #9CA3AF;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6B7280;
+        }
+    </style>
+
+  <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
+
+<!-- ================= HEADER ================= -->
+  <div id="site-header"></div>
+
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <main class="flex-1">
+      <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="container max-w-[1280px] flex-1">
+
+<!-- ================= HERO SECTION ================= --> 
+          <div class="flex flex-wrap justify-between items-end gap-6 p-4 pt-8 pb-8 border-b border-gray-100">
+            <div class="mt-32 flex flex-col gap-3 max-w-3xl">
+              <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider mb-1">
+                <a href="../../products.html" class="hover:text-brand-600 cursor-pointer">Products</a>
+                <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                <span class="text-brand-600">All Items</span>
+              </div>
+
+              <!-- DYNAMIC TITLE -->
+              <h1
+                id="page-title"
+                class="text-slate-900 text-4xl md:text-6xl font-display font-bold leading-tight tracking-tight">
+              </h1>
+
+              <!-- DYNAMIC DESCRIPTION -->
+              <p
+                id="page-desc"
+                class="text-text-muted text-lg font-light leading-relaxed max-w-2xl mt-2">
+              </p>
+            </div>
+
+            <div class="hidden md:block">
+              <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center text-accent animate-pulse">
+                <span class="material-symbols-outlined text-[32px]">eco</span>
+              </div>
+            </div>
+          </div>
+
+<!-- ================= FILTERS ================= -->
+          <div class="flex gap-3 p-4 py-8 flex-wrap items-center overflow-x-auto">
+            <div class="flex items-center gap-2 mr-4 font-semibold">
+              <span class="material-symbols-outlined text-brand-600">tune</span>
+              <span>Filter By:</span>
+            </div>
+
+            <button class="h-9 rounded-full bg-brand-600 text-white px-5">All</button>
+            <button class="h-9 rounded-full bg-white border px-5">Organic Certified</button>
+            <button class="h-9 rounded-full bg-white border px-5">Grade A</button>
+            <button class="h-9 rounded-full bg-white border px-5">Powdered</button>
+            <button class="h-9 rounded-full bg-white border px-5">Whole Spices</button>
+            <button class="h-9 rounded-full bg-white border px-5">Extracts</button>
+          </div>
+
+          <!-- ✅ DYNAMIC PRODUCT GRID -->
+          <div
+            id="product-grid"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+          </div>
+
+          <!-- PAGINATION (STATIC UI) 
+          <div class="flex justify-center py-10">
+            <div class="flex items-center gap-2">
+              <button class="w-10 h-10 rounded-lg border flex items-center justify-center">
+                <span class="material-symbols-outlined">chevron_left</span>
+              </button>
+              <button class="w-10 h-10 rounded-lg bg-brand-600 text-white font-bold">1</button>
+              <button class="w-10 h-10 rounded-lg border">2</button>
+              <button class="w-10 h-10 rounded-lg border">3</button>
+              <span class="text-gray-400 px-1">...</span>
+              <button class="w-10 h-10 rounded-lg border flex items-center justify-center">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </div> -->
+
+          <!-- ================= CTA ================= -->
+          <div class="my-12">
+            <div class="relative overflow-hidden rounded-3xl bg-brand-600 p-12 text-white">
+              <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                Need Custom Packaging or White Labeling?
+              </h2>
+              <p class="text-lg mb-6">
+                End-to-end logistics for bulk orders including branding & lab reports.
+              </p>
+              <button class="bg-white text-brand-600 px-8 py-3 rounded-full font-bold">
+                Contact Sales Team
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+<!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-950 border-t border-slate-200 pt-20 pb-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3 text-brand-600">
+                            <div class="flex size-12 items-center justify-center rounded-full bg-white text-brand-600">
+                              <img src="../../assets/images/logo.png" 
+                                    class="w-30 h-30"
+                                    alt="KHYATI Overseas Logo" />  
+                            </div>
+                            <h2 class="text-xl font-display font-bold tracking-tight text-white">KHYATI OVERSEAS</h2>
+                        </div>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Connecting global markets with India's finest agricultural treasures. Certified quality,
+                            ethical sourcing, and reliable logistics.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:border-brand-600 hover:text-brand-600 hover:shadow-md transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined text-[20px]">call</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:border-brand-600 hover:text-brand-600 hover:shadow-md transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined text-[20px]">mail</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:border-brand-600 hover:text-brand-600 hover:shadow-md transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined text-[20px]">public</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6 text-lg font-display">Company</h4>
+                        <ul class="flex flex-col gap-3 text-slate-500 text-sm">
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="../../about.html">About Us</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="../../services.html">Our Process</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Certifications</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Careers</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">News &amp; Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6 text-lg font-display">Products</h4>
+                        <ul class="flex flex-col gap-3 text-slate-500 text-sm">
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Indian Spices</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Oil Seeds</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Grains &amp; Pulses</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Dehydrated Vegetables</a></li>
+                            <li><a class="hover:text-brand-600 transition-colors hover:translate-x-1 inline-block"
+                                    href="#">Herbs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6 text-lg font-display">Contact Us</h4>
+                        <ul class="flex flex-col gap-4 text-slate-500 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-white mt-0.5">location_on</span>
+                                <span>Collectorate Main Rd, Kothi Bazar Colony,<br /> Narmadapuram, Madhya Pradesh,
+                                India - 461001</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-white">phone</span>
+                                <span>+91 9201767546</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-white">email</span>
+                                <span>export@khyatioverseas.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-slate-500 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                    <p>© 2024 Khyati Overseas. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="hover:text-brand-600 transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-brand-600 transition-colors" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/products-data.js"></script>
+  <script src="../../assets/js/product-render.js"></script>
+
+  <script>
+    renderAllProducts();
+  </script>
+
+</body>
+</html>
